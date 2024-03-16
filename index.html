@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Aqui começa o cabeçalho do projeto -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fontes -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Links css -->
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="estilo.css" />
+
+  <!-- Imagem para a aba -->
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <title>Instagram</title>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+
+  <header>
+    <div class="top-container">
+      <div class="logo">
+        <div class="logo-icon">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+        <div class="border"></div>
+        <div class="logo-cursive">
+          <img src="img/logo.png" alt="logo">
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Pesquisar">
+      </div>
+      <div class="bottons">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <ion-icon name="compass-outline"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Cabeçalho mobile -->
+
+    <div class="top-container-mobile">
+      <div class="logo">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+      <div class="logo-cursive">
+        <img src="img/logo.png" alt="logo instagram" />
+      </div>
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </div>
+  </header>
+
+  <!-- Conteúdo do site -->
+
+  <div class="content">
+    <div class="principal">
+
+      <!-- Stories - cada div sotories é referente à uma bolinha de sotory e a border-stories é a caixinha com borda -->
+
+      <div class="border-stories">
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/ajrbrothers.jpg" alt="ajr-brothers" /></div>
+          <p>ajrbrothers</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/imaginedragons.jpg" alt="imagine-dragons" />
+          </div>
+          <p>imaginedragons</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/aurora.jpg" alt="aurora" /></div>
+          <p>aurora</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/melanie.jpg" alt="melanie-martinez" /></div>
+          <p>littlebodybigheart</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/twentyonepilots.jpeg" alt="twenty-one-pilots" />
+          </div>
+          <p>twentyonepilots</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/troyesivan.jpeg" alt="troye-sivan" /></div>
+          <p>troyesivan</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/thenbhd.jpg" alt="the-neighbourhood" /></div>
+          <p>thenbhd</p>
+        </div>
+        <div class="stories">
+          <div class="profile-photo"><img class="profile-img" src="img/billie.jpeg" alt="billie-eilish" /></div>
+          <p>billieeilish</p>
+        </div>
+        <ion-icon class="next-icon" name="chevron-forward-circle"></ion-icon>
+      </div>
+
+      <!-- Coluna da esquerda com os posts, posts é a configuração geral, top posts é só a barra branca antes da foto que tem os 3 pontinhos -->
+
+      <div class="col-left">
+        <div class="post">
+          <div class="top-posts">
+            <div class="information"><img class="profile-picture" src="img/ajrbrothers.jpg" alt="user-profile" />
+              <p>ajrbrothers</p>
+            </div>
+            <div class="icons-bottom"><ion-icon name="ellipsis-horizontal"></ion-icon></div>
+          </div>
+          <img class="post-photo" src="img/ajrbrothers1.jpeg" alt="post-do-usuario" />
+
+          <!-- Parte branca embaixo dos posts, depois da foto do post -->
+
+          <div class="post-bottom">
+            <div class="icons-post-bottom">
+              <div class="icons-left">
+                <ion-icon class="like" name="heart"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+              <div class="icons-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+              </div>
+            </div>
+
+            <!-- Quem curtiu a foto e quantidade de curtidas -->
+
+            <div class="likes">
+              <img class="user-profile-photo" src="img/eu.jpg" alt="user-liked" />
+              <div class="informacoes-curtidas"> Curtido por <strong>yxsbx</strong> e <strong>outras 9.884.132
+                  pessoas</strong>
+              </div>
+            </div>
+
+            <!-- Legenda da foto -->
+
+            <div class="captions"><strong>ajrbrothers</strong> Morning Brazil 🌞</div>
+
+            <!-- Comentários das fotos e quantidade de comentários + parte para fazer comentário e postar -->
+
+            <h6 class="see-comments">Ver todos os 29.237 comentários</h6>
+            <div class="comments">
+              <p class="comment"><strong>yxsbx</strong> On fire!!!! 🔥</p>
+              <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+            </div>
+            <div class="comments">
+              <p class="comment"><strong>beyonce</strong> Perfect! </p>
+              <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+            </div>
+            <div class="post-comment">
+              <input class="input-comment" placeholder="Addcione um comentário" />
+              <ion-icon class="share" name="happy-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="top-posts">
+          <div class="information"><img class="profile-picture" src="img/aurora.jpg" alt="user-profile" />
+            <p>auroramusic</p>
+          </div>
+          <div class="icons-bottom"><ion-icon name="ellipsis-horizontal"></ion-icon></div>
+        </div>
+        <img class="post-photo" src="img/aurora1.jpg" alt="post-do-usuario" />
+        <div class="post-bottom">
+          <div class="icons-post-bottom">
+            <div class="icons-left">
+              <ion-icon class="like" name="heart"></ion-icon>
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+            <div class="icons-right">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="likes">
+            <img class="user-profile-photo" src="img/eu.jpg" alt="user-liked" />
+            <div class="informacoes-curtidas"> Curtido por <strong>yxsbx</strong> e <strong>outras 5.125.856
+                pessoas</strong>
+            </div>
+          </div>
+          <div class="captions"><strong>auroramusic</strong> 🌞</div>
+          <h6 class="see-comments">
+            Ver todos os 29.237 comentários
+          </h6>
+          <div class="comments">
+            <p class="comment"><strong>yxsbx</strong> So cute 🌞</p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="comments">
+            <p class="comment"><strong>neymarjr</strong> Love u! 🙌🏾 </p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="post-comment">
+            <input class="input-comment" placeholder="Addcione um comentário" />
+            <ion-icon class="share" name="happy-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="top-posts">
+          <div class="information"><img class="profile-picture" src="img/joji.webp" alt="user-profile" />
+            <p>sushitrash</p>
+          </div>
+          <div class="icons-bottom"><ion-icon name="ellipsis-horizontal"></ion-icon></div>
+        </div>
+        <video class="post-video" width="614" height="614" controls: loop autoplay muted>
+          <source src="img/joji.mp4" type="video/mp4" />
+          <source src="img/joji.ogg" type="video/ogg" />
+        </video>
+        <div class="post-bottom">
+          <div class="icons-post-bottom">
+            <div class="icons-left">
+              <ion-icon class="like" name="heart"></ion-icon>
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+            <div class="icons-right">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="likes">
+            <img class="user-profile-photo" src="img/eu.jpg" alt="user-liked" />
+            <div class="informacoes-curtidas"> Curtido por <strong>yxsbx</strong> e <strong>outras 3.985.005
+                pessoas</strong>
+            </div>
+          </div>
+          <div class="captions"><strong>sushitrash</strong> New single on Spotify! </div>
+          <h6 class="see-comments">
+            Ver todos os 29.237 comentários
+          </h6>
+          <div class="comments">
+            <p class="comment"><strong>yxsbx</strong> Come to Brazil please! 🔥</p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="comments">
+            <p class="comment"><strong>neymarjr</strong> Love u! 🙌🏾 </p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="post-comment">
+            <input class="input-comment" placeholder="Addcione um comentário" />
+            <ion-icon class="share" name="happy-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="top-posts">
+          <div class="information"><img class="profile-picture" src="img/melanie.jpg" alt="user-profile" />
+            <p>littlebodybigheart</p>
+          </div>
+          <div class="icons-bottom"><ion-icon name="ellipsis-horizontal"></ion-icon></div>
+        </div>
+        <img class="post-photo" src="img/melanie1.jpg" alt="post-do-usuario" />
+        <div class="post-bottom">
+          <div class="icons-post-bottom">
+            <div class="icons-left">
+              <ion-icon class="like" name="heart"></ion-icon>
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+            <div class="icons-right">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="likes">
+            <img class="user-profile-photo" src="img/eu.jpg" alt="user-liked" />
+            <div class="informacoes-curtidas"> Curtido por <strong>yxsbx</strong> e <strong>outras 3.698.859
+                pessoas</strong>
+            </div>
+          </div>
+          <div class="captions"><strong>littlebodybigheart</strong> Cry baby 🌞</div>
+          <h6 class="see-comments">
+            Ver todos os 29.237 comentários
+          </h6>
+          <div class="comments">
+            <p class="comment">
+              <strong>yxsbx</strong> Come to Brazil please! 🔥
+            </p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="comments">
+            <p class="comment"><strong>neymarjr</strong> Love u! 🙌🏾 </p>
+            <ion-icon class="post-like-comments" name="heart-outline"></ion-icon>
+          </div>
+          <div class="post-comment">
+            <input class="input-comment" placeholder="Addcione um comentário" />
+            <ion-icon class="share" name="happy-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra lateral com as recomendações divida em cabeçalho (dados do meu perfil) e as sugestões para você -->
+
+      <aside class="sidebar">
+        <div class="user-profile">
+          <img class="sidebar-user-profile" src="img/eu.jpg" alt="foto-do-usuario" />
+          <div class="sidebar-profile-data">
+            <h3 class="sidebar-username">yxsbx</h3>
+            <h4 class="sidebar-name">Yasmin Barcelos</h4>
+          </div>
+        </div>
+
+        <div class="suggestions">
+          <div class="suggestions-top">
+            <p class="suggestions-you">Sugestões para você</p>
+            <h4 class="suggestions-see">Ver tudo</h4>
+          </div>
+
+          <!-- Sugestões de perfis com uma classe por elemento para tornar cada um personalizável -->
+
+          <div class="suggestions-profiles">
+            <div class="suggestions-user-profiles">
+              <div class="suggestions-profile-data">
+                <img class="suggestions-img-user" src="img/neymar.png" alt="foto-do-usuario" />
+                <div class="suggestions-info-profile">
+                  <h4 class="suggestions-username">neymarjr</h4>
+                  <p class="follow-you">Segue você</p>
+                </div>
+              </div>
+              <h4 class="follow">Seguir</h4>
+            </div>
+          </div>
+
+          <div class="suggestions-profiles">
+            <div class="suggestions-user-profiles">
+              <div class="suggestions-profile-data">
+                <img class="suggestions-img-user" src="img/justin.jpg" alt="foto-do-usuario" />
+                <div class="suggestions-info-profile">
+                  <h4 class="suggestions-username">justinbieber</h4>
+                  <p class="follow-you">Segue você</p>
+                </div>
+              </div>
+              <h4 class="follow">Seguir</h4>
+            </div>
+          </div>
+
+          <div class="suggestions-profiles">
+            <div class="suggestions-user-profiles">
+              <div class="suggestions-profile-data">
+                <img class="suggestions-img-user" src="img/harry.jpg" alt="foto-do-usuario" />
+                <div class="suggestions-info-profile">
+                  <h4 class="suggestions-username">harrystyles</h4>
+                  <p class="follow-you">Novo no Instagram</p>
+                </div>
+              </div>
+              <h4 class="follow">Seguir</h4>
+            </div>
+          </div>
+
+          <div class="suggestions-profiles">
+            <div class="suggestions-user-profiles">
+              <div class="suggestions-profile-data">
+                <img class="suggestions-img-user" src="img/lana.png" alt="foto-do-usuario" />
+                <div class="suggestions-info-profile">
+                  <h4 class="suggestions-username">honeymoon</h4>
+                  <p class="follow-you">Segue você</p>
+                </div>
+              </div>
+              <h4 class="follow">Seguir</h4>
+            </div>
+          </div>
+
+          <div class="suggestions-profiles">
+            <div class="suggestions-user-profiles">
+              <div class="suggestions-profile-data">
+                <img class="suggestions-img-user" src="img/sia.jpeg" alt="foto-do-usuario" />
+                <div class="suggestions-info-profile">
+                  <h4 class="suggestions-username">siamusic</h4>
+                  <p class="follow-you">Segue você</p>
+                </div>
+              </div>
+              <h4 class="follow">Seguir</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parte de baixo da sidebar com os creditos -->
+
+        <div class="sidebar-bot">
+          <div class="data">
+            <h6>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais
+              relevantes • Hashtags • Idioma</h6>
+          </div>
+          <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+  <footer class="menu-bot">
+    <ion-icon name="home"></ion-icon>
+    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="add-circle-outline"></ion-icon>
+    <ion-icon name="heart-outline"></ion-icon>
+    <ion-icon name="person-outline"></ion-icon>
+  </footer>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
